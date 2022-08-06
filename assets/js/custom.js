@@ -124,7 +124,7 @@
     speed: 1000,
     loop: true,
     spaceBetween : 30,
-    autoplay: false,
+    autoplay: true,
     navigation: {
       nextEl: '.client-default-area .swiper-btn-next',
       prevEl: '.client-default-area .swiper-btn-prev',
