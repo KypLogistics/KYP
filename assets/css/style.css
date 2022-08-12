@@ -2460,6 +2460,10 @@ table p {
   margin: 0 !important;
 }
 
+.header-area.header-default .row>[class*=col-]{
+  padding:0px 10px;
+}
+
 @media only screen and (max-width: 479.98px) {
   .header-area.header-default .header-logo-area {
     margin-right: -15px;
@@ -2690,8 +2694,7 @@ table p {
 @media only screen and (max-width: 479.98px) {
   .header-area .btn-menu {
     height: 35px;
-    margin-left: 5px;
-    width: 32px;
+    width: 33px;
   }
 
   .header-area .btn-menu span {
@@ -2963,11 +2966,8 @@ table p {
   width: 100%;
   height: 100vh;
 }
-@media only screen and (max-width: 1100px) {
-  .carousel-inner .carousel-item img {
-    object-fit: cover;    
-  }
-}
+
+
 .carousel .carousel-item h1,
 .carousel .carousel-item p {
   position: relative;
@@ -3003,28 +3003,22 @@ table p {
 }
 
 @media only screen and (max-width: 767px) {
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 60vh;
+  }
   .carousel .carousel-control-prev-icon {
     left: 0;
-    top: -6rem;
+    top: 0%;
   }
 
   .carousel .carousel-control-next-icon {
     right: 0;
-    top: -6rem;
+    top: 0%;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  .carousel .carousel-control-prev-icon {
-    left: 0;
-    top: -8rem;
-  }
-
-  .carousel .carousel-control-next-icon {
-    right: 0;
-    top: -8rem;
-  }
-
   .carousel .carousel-item h1,
   .carousel .carousel-item p {
     left: 4rem;
@@ -3058,12 +3052,6 @@ table p {
   text-align: center;
   color: #003399;
   padding-bottom: 1rem;
-}
-
-@media only screen and (max-width: 767px) {
-  /* .about-area.about-default-area {
-    padding: 77px 0 80px;
-  } */
 }
 
 @media only screen and (max-width: 1199px) {
@@ -3227,15 +3215,6 @@ table p {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .about-thumb {
-    display: none;
-  }
-}
-about-thumb
-/* . img {
-  width: 100%;
-} */
 
 .about-content-style1 .about-thumb {
   margin-left: 20px;
@@ -5664,7 +5643,6 @@ Divider CSS
   color: #05103b;
   display: inline-block;
   font-size: 25px;
-  float: right;
   height: 52px;
   left: auto;
   line-height: 49px;
