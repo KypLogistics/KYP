@@ -3019,9 +3019,8 @@ table p {
 }
 
 @media only screen and (max-width: 575px) {
-  .carousel .carousel-item h1,
-  .carousel .carousel-item p {
-    left: 4rem;
+  #carouselExampleControls {
+    display: none;
   }
 }
 
@@ -3047,6 +3046,10 @@ table p {
  .about-area.about-default-area {
   margin-top: 20px;
 } 
+
+.about-area.about-default-area .about-thumb2{
+  display: none;
+}
 
 .about-area.about-default-area .container h1 {
   text-align: center;
@@ -3204,17 +3207,14 @@ table p {
   }
 }
 
-.about-thumb {
-  margin-left: 43px;
-  margin-right: -3px;
-}
-
-@media only screen and (max-width: 1199px) {
-  .about-thumb {
-    margin-left: 30px;
+@media only screen and (max-width: 576px) {
+  .about-area.about-default-area .about-thumb {
+    display: none;
+  }
+  .about-area.about-default-area .about-thumb2{
+    display: block;
   }
 }
-
 
 .about-content-style1 .about-thumb {
   margin-left: 20px;
@@ -3235,18 +3235,6 @@ table p {
   }
 }
 
-.about-content-style1 .about-thumb img {
-  border-radius: 2px;
-  clip-path: polygon(0% 0%, 100% 12%, 100% 0%, 100% 100%, 0% 88%);
-  -webkit-clip-path: polygon(0% 0%, 100% 12%, 100% 0%, 100% 100%, 0% 88%);
-}
-
-@media only screen and (max-width: 767px) {
-  .about-content-style1 .about-thumb img {
-    clip-path: none;
-    -webkit-clip-path: none;
-  }
-}
 
 .about-content-style1 .about-thumb .about-thumb-shape {
   background-color: #003399;
@@ -3549,23 +3537,29 @@ table p {
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-.slide-container{
-  width: 97%;
+.client-container{
+  width: 100%;
   padding: 40px 0 20px 0;
 }
-.slide-content{
-  margin: 0 40px;
+.client-content{
   overflow: hidden;
-  border-radius: 25px;
 }
 .clientHeading{
   text-align: center;
   color: #003399;
   padding-bottom: 1rem;
 } 
+
+.card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
 .card{
+  width: 30%;
+  margin:10px;
   border-radius: 10px;
   background-color: #FFF;
+  border: 1px solid #003399;
 }
 .image-content,
 .card-content{
@@ -3663,11 +3657,17 @@ table p {
 }
 
 @media screen and (max-width: 768px) {
-  .slide-content{
-    margin: 0 10px;
+  .card{
+    width: 46%;
   }
   .swiper-navBtn{
     background-color :white;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .card{
+    width:95%
   }
 }
 
