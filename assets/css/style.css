@@ -3142,7 +3142,7 @@ table p {
 }
 
 .about-content .section-title .title {
-  font-size: 35px;
+  font-size: 28px;
   line-height: 1.2;
   margin-bottom: 21px;
   margin-right: -10px;
@@ -6273,7 +6273,9 @@ Divider CSS
  /* ----===== Contact us section starts ====-----  */
 
 #contactus{
-  margin: 60px 0;
+  margin: 20px 0;
+  padding: 30px 0;
+  background: rgb(232, 226, 226);
 }
 
 #contactus .contact-heading{
