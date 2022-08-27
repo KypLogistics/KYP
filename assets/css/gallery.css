@@ -31,11 +31,9 @@ img {
     margin-bottom: -2rem;
 }
 
-.gallery-area .gallery-slider {
+.gallery-slider {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-bottom: 4rem;
     justify-content: space-around;
 }
 
@@ -52,6 +50,7 @@ img {
 
 .gallery-slider .gallery-item a img {
     height: 15rem;
+    width: 20rem;
 }
 
 .gallery-slider .gallery-item a p {

@@ -4641,6 +4641,11 @@ Divider CSS
   position: relative;
 }
 
+.projects-slider-container .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 1199px) {
   .project-default-area {
     padding: 50px 0 0;
@@ -4767,7 +4772,7 @@ Divider CSS
   color: #003399;
 }
 
-.project-item:hover .thumb img {
+.project-item:hover img {
   transform: scale(1.15);
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.15);
@@ -4777,6 +4782,10 @@ Divider CSS
 
 .projects-slider-container .project-item {
   overflow: hidden;
+}
+.projects-slider-container .project-item img {
+  height: 20rem;
+  width: 25rem;
 }
 
 .projects-slider-container .swiper-slide.swiper-slide-active .project-item .content {

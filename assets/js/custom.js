@@ -43,10 +43,12 @@
   
   // Projects Slider
   var projectsSlider = new Swiper('.projects-slider-container', {
-    slidesPerView: 3,
-    centeredSlides: true,
+    slidesPerView : 3,
+    speed: 1000,
+    dots: true,
     loop: true,
-    spaceBetween : 30,
+    spaceBetween : 20,
+    autoplay: false,
     navigation: {
       nextEl: '.project-default-area .swiper-btn-next',
       prevEl: '.project-default-area .swiper-btn-prev',
@@ -65,13 +67,17 @@
       },
 
       768:{
-        slidesPerView : 3
+        slidesPerView : 2
 
       },
 
       576:{
-        slidesPerView : 1,
-        centeredSlides: false
+        slidesPerView : 2,
+      },
+
+      
+      381:{
+        slidesPerView : 1
       },
 
       0:{
@@ -194,6 +200,7 @@
       }
     }
   });
+
 
   var teamSlider = new Swiper('.team-slider-container', {
     slidesPerView : 4,
